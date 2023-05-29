@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <style>
+        #checks{
+            display: flex;
+            background-color: midnightblue;
+            width: 250px;
+            height: 50px;
+            margin: 3px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-radius: 20px;
+            align-items: center;
+        }
+        h6{
+            font-size: 15px;
+            color: white;
+        }
+    </style>
+    <script>
+        var a = []
+        function func(){
+            var checkBox1 = document.getElementById("mycheck1");
+            var text = document.getElementById("text1");
+            if (checkBox1.checked == true){
+                a[0] = 1; 
+            }
+            else {
+                a[0] = 0;
+            }
+            var checkBox2 = document.getElementById("mycheck2");
+            var text = document.getElementById("text2");
+            if (checkBox2.checked == true){ 
+                a[1] = 1;
+            }
+            else {
+                a[1] = 0;
+            }
+            var checkBox3 = document.getElementById("mycheck3");
+            var text = document.getElementById("text3");
+            if (checkBox3.checked == true){
+                a[2] = 1;
+            } 
+            else {
+                a[2] = 0;
+            }
+            var checkBox4 = document.getElementById("mycheck4");
+            var text = document.getElementById("text4");
+            if (checkBox4.checked == true){
+                a[3] = 1;
+            }  
+            else {
+                a[3] = 0;
+            } 
+            var checkBox5 = document.getElementById("mycheck5");
+            var text = document.getElementById("text5");
+            if (checkBox5.checked == true){
+                a[4] = 1;
+            }
+            else {
+                a[4] = 0;
+            }
+        }
+        function showHobbies(){
+              var text1 = document.getElementById("text1")
+              if (a[0] == 1){
+                text1.style.display = "block"
+              }
+              else {
+                text1.style.display = "none"
+              }
+              var text2 = document.getElementById("text2")
+              if (a[1] == 1){
+                text2.style.display = "block"
+              }
+              else {
+                text2.style.display = "none"
+              }
+              var text3 = document.getElementById("text3")
+              if (a[2] == 1){
+                text3.style.display = "block"
+              }
+              else {
+                text3.style.display = "none"
+              }
+              var text4 = document.getElementById("text4")
+              if (a[3] == 1){
+                text4.style.display = "block"
+              }
+              else {
+                text4.style.display = "none"
+              }
+              var text5 = document.getElementById("text5")
+              if (a[4] == 1){
+                text5.style.display = "block"
+              }
+              else {
+                text5.style.display = "none"
+              }
+        }
+    </script>
+</head>
+<body>
+    <div id="hobbies">
+        <h5 style="font-size: larger;">Here are my hobbies, does any of it match yours?</h5>
+        <div id="checks" ><input type="checkbox" id="mycheck1" onclick="func()">
+          <h6 class="hobby">Watching movies</h6>
+        </div>
+        <div id="checks"><input type="checkbox" id="mycheck2" onclick="func()">
+          <h6 class="hobby">Listening to music</h6>
+        </div>
+        <div id="checks"><input type="checkbox" id="mycheck3" onclick="func()">
+            <h6 class="hobby">Minding my own work</h6></div>
+        <div id="checks"><input type="checkbox" id="mycheck4" onclick="func()">
+            <h6 class="hobby">Reading novels of a specific genre</h6></div>
+        <div id="checks"><input type="checkbox" id="mycheck5" onclick="func()">
+            <h6 class="hobby">Developing this one, wait!</h6></div>
+        <div id="text"><p id="text1" style="display: none;">I like to watch both hollywood and bollywood depending on my mood.
+                                                            I am watching so many sitcoms like FRIENDS, HOW I MET YOUR MOTHER currently along with some more series like GAME OF THRONES and WHEEL OF TIME
+                                                            coming to bollywood I am not able to keep track of no. of watched movies, yes I like them a lot!.
+                                                            </p></div>
+        <div id="text"><p id="text2" style="display: none;">2nd Checkbox is Checked!</p></div>
+        <div id="text"><p id="text3" style="display: none;">3rd Checkbox is Checked!</p></div>
+        <div id="text"><p id="text4" style="display: none;">4th Checkbox is Checked!</p></div>
+        <div id="text"><p id="text5" style="display: none;">5th Checkbox is Checked!</p></div>
+        <button type="button" onclick="showHobbies()" style="height: 30px; margin: 20px;background-color: gray;">Learn more</button>
+    </div>
+</body>
+</html>

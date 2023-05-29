@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        #parent-container{
+            background-image: url(pexels-hristo-fidanov-1252890.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+        }
+        .topnav{
+            display: flex;
+            background-color:darkred;
+            opacity: 1;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+        }
+        .menu{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .intro{
+            padding: 10px;
+            background-size: cover;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        a:link{
+            text-decoration: none;
+            color:white; 
+            font-size: larger; 
+            padding: 15px;
+        }
+        a:hover{
+           background-color: red;
+           opacity: 1;
+           color: white;
+        }
+        a:active{
+            background-color: red;
+           opacity: 1;
+           color: white;
+        }
+        img{
+            height: 100px;
+        }
+        .typewriter h1{
+            color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(30,end), blink-caret 2s step-end infinite;
+        }
+        .typewriter h3{
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 6s steps(30,end), blink-caret .5s step-end infinite;
+        }
+        @keyframes typing{
+            from {width: 0;}
+            to {width: 100%;}
+        }
+        @keyframes blink-caret{
+            from, to {border-color: transparent;}
+            50%;
+        }
+    </style>
+    
+</head>
+<body >
+    <div id="parent-container">
+        <div class="topnav">
+            <div class="menu">
+                <a href="/index.html">Home</a>
+            </div>
+            <div class="menu">
+               <a href="/projects.html">Projects</a>
+            </div>
+            <div class="menu">
+                <a href="/education.html">Education</a>
+            </div>
+            <div class="menu">
+                <a href="/hobbies.html">Hobbies</a>
+            </div>
+            <div class="menu">
+                <a href="/contacts.html">Contacts</a>
+            </div>
+        </div>
+        <div class="container" >
+            <div id="image" class="intro">
+                <img src="WhatsApp Image 2023-04-06 at 2.08.46 PM.jpeg" alt="myimage">
+            </div>
+            <div class ="intro" id="desc" style="color:white">
+                <div class="typewriter">
+                    <h1>Hi, I am Ananya Rao</h>
+                    <h3>Welcome to my website!</h3>
+                </div>
+                <p style="font-size: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nam consectetur dicta aut distinctio modi, rem voluptatibus? Magnam eum deserunt quaerat! Commodi illo eum accusamus excepturi voluptates maxime quidem ipsum sed provident numquam eaque sit maiores quod ut ipsam voluptatum omnis id consectetur, ducimus sint architecto? Debitis quaerat, culpa eaque quidem fugit laborum, labore numquam amet neque nesciunt ab modi pariatur explicabo minima ad iusto magnam, enim vel? Maxime, voluptatibus mollitia inventore ea aperiam ex tempora dolores delectus saepe, amet praesentium. Repudiandae modi aliquid voluptatum illum, praesentium delectus quas eligendi voluptates optio inventore accusamus libero non, nihil, cupiditate consectetur commodi tempore vitae mollitia quibusdam? Vel placeat deleniti nisi ipsum incidunt eum quis perspiciatis, temporibus facilis quod quisquam? Ducimus, provident distinctio delectus aspernatur quasi ad. Voluptate quos enim fugit, tempore dolorem necessitatibus id corporis blanditiis ipsa vitae provident placeat suscipit commodi dicta nihil. Quis, quisquam fugiat quidem sit similique inventore qui.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
